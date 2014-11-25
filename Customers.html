@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+  <title>Our Company</title>
+  <h1>Welcome to Our Company</h1>
+  <nav id="mymenu"></nav>
+  <link href="Site.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="main">
+  <h1>Our Customers</h1>
+  <p id="demo"></p>
+  <div id="customerTable"></div>
+  <footer id="foot01"></footer>
+</div>
+
+<script src="Script.js"></script>
+
+<script>
+/*
+var customerData = "file:///C:/Temp/Demoweb/Customers_Map.txt";
+readTextFile(customerData)
+
+function readTextFile(file) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState == 4) {
+            if (rawFile.status == 200 || rawFile.status == 0) {
+                var allText = rawFile.responseText;
+                createCustomerTable(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+function createCustomerTable(response) {
+    var arr = JSON.parse(response);
+    var i;
+    var out = "<table><tr><th>Name</th><th>City</th><th>Country</th></tr>";
+    for(i = 0; i < arr.length; i++) {
+        out += "<tr><td>" +
+        arr[i].Name +
+        "</td><td>" +
+        arr[i].City +
+        "</td><td>" +
+        arr[i].Country +
+        "</td></tr>";
+    }
+    out += "</table>"
+    document.getElementById("id01").innerHTML = out;
+}
+*/
+/*
+var xmlhttp = new XMLHttpRequest();
+var url = "file://Temp/Demoweb/Customers_MYSQL.php";
+
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        myFunction(xmlhttp.responseText);
+    }
+}
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(response) {
+    var arr = JSON.parse(response);
+    var i;
+    var out = "<table><tr><th>Name</th><th>City</th><th>Country</th></tr>";
+    for(i = 0; i < arr.length; i++) {
+        out += "<tr><td>" +
+        arr[i].Name +
+        "</td><td>" +
+        arr[i].City +
+        "</td><td>" +
+        arr[i].Country +
+        "</td></tr>";
+    }
+    out += "</table>"
+    document.getElementById("id01").innerHTML = out;
+}*/
+</script>
+
+</body>
+</html> 
